@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acertijo 5: El Refugio del Brunch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById("answer").value.trim().toUpperCase();
+            if (answer === "HOTEL PALACIO DE FERRERA") {
+                window.location.href = "rewards.html"; // Redirigir a la página de recompensas
+            } else {
+                document.getElementById("result").innerHTML = "Respuesta incorrecta. Intenta de nuevo.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Acertijo 5: El Refugio del Brunch</h1>
+        <p>En el centro de Avilés, con un jardín magestuoso, existe un lugar donde se visten las princesas</p>
+        <input type="text" id="answer" class="form-control" placeholder="Introduce tu respuesta" required>
+        <button class="btn btn-success mt-3" onclick="checkAnswer()">Enviar</button>
+        <p id="result" class="mt-3 text-danger"></p>
+    </div>
+</body>
+</html>
