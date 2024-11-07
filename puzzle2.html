@@ -8,7 +8,7 @@
     <script>
         function checkAnswer() {
             var answer = document.getElementById("answer").value.trim();
-            if (answer === "2.75") {
+            if (answer === "(8*7*3*2)-(8+3)*2") {
                 window.location.href = "puzzle3.html"; // Redirigir al siguiente acertijo
             } else {
                 document.getElementById("result").innerHTML = "Respuesta incorrecta. Intenta de nuevo.";
@@ -18,14 +18,20 @@
 </head>
 <body>
     <div class="container text-center mt-5">
-        <h1>Acertijo 2: Pasito a pasito...</h1>
-        <p>Con los digitos de una fecha importante, conseguimos mediante operaciones matematicas un numeros que se aparece cada poco. ¿Serás capaz de llegar a ello? Seguro que sí.
+        <h1>Acertijo 2: Cifras y ... mas cifras</h1>
+        <p>Con los digitos de una fecha importante, conseguimos mediante operaciones matematicas un numero que se aparece cada poco, el 911, 
+	casualidades de la vida, dentro de 2 dias. No se si sabes que ese numero es el dia 314 de este año bisiesto que estamos viviendo lleno
+	de amor y felicida. A ver si consigues sacar ese número, el 314, con los digitos que conforman la fecha misteriosa.
+	¿Serás capaz de llegar a ello? Seguro que sí.
+	Origen->2 8 0 7 2 0 2 3 +-*/
+	Destino->314
+	</p>
 		
 		
         <input type="text" id="answer" class="form-control" placeholder="Introduce tu respuesta" required>
         <button class="btn btn-success mt-3" onclick="checkAnswer()">Enviar</button>
         <p id="result" class="mt-3 text-danger"></p>
-		<p>Te dare una pista... solo si me la pides</p>
+		<p>Te dare una pista... se pueden repetir números</p>
     </div>
 </body>
 </html>
